@@ -1,0 +1,84 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+  opacity: 0.9;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: -50%; right: -50%;
+    bottom: -50%; left: -50%;
+    background: linear-gradient(115deg, rgba(102,126,234,0.9) 0%, rgba(118,75,162,0.9) 75%);
+    z-index: -1;
+    opacity: 0.7;
+    background-size: 400% 400%;
+    animation: moveBackground 15s linear infinite;
+}
+
+.wrapper {
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+  
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.card h1 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.subtext {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #43a047;
+}
+
+button i {
+    font-size: 20px;
+}
